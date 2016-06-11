@@ -13,13 +13,13 @@ def split_array(array, array_size)
       index += 1
     end
 
-    split_array << new_split
+    split_array << new_split.compact
     counter = 0
   end
 
   return split_array
 end
 
-result = split_array([0,1,2,3,4,5],2)
+result = split_array([0,1,2,3,4,5,6],2)
 
 p result
